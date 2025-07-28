@@ -86,9 +86,6 @@ jQuery(document).ready(function($) {
         
         <!-- Enhanced Sidebar -->
         <aside class="ld-quiz-sidebar" role="complementary" aria-label="<?php esc_attr_e('תוכן עזר למבחן', 'lilac-quiz-sidebar'); ?>">
-            <div class="sidebar-header">
-                <h3><?php _e('תוכן עזר', 'lilac-quiz-sidebar'); ?></h3>
-            </div>
             
             <div id="question-media" class="question-media-container">
                 <div class="media-loading" style="display: none;">
@@ -106,12 +103,9 @@ jQuery(document).ready(function($) {
                 </div>
                 
                 <div class="media-placeholder">
-                    <p><?php _e('תוכן עזר יוצג כאן במהלך המבחן', 'lilac-quiz-sidebar'); ?></p>
                 </div>
                 
                 <div class="media-error" style="display: none;">
-                    <p><?php _e('שגיאה בטעינת התוכן העזר', 'lilac-quiz-sidebar'); ?></p>
-                    <button type="button" class="retry-media-load"><?php _e('נסה שוב', 'lilac-quiz-sidebar'); ?></button>
                 </div>
             </div>
         </aside>

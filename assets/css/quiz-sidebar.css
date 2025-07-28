@@ -140,6 +140,40 @@ main .quiz-container > * {
     box-sizing: border-box !important;
 }
 
+/* Image hover fix - prevent scaling and maintain fixed dimensions */
+.ld-quiz-sidebar img,
+.ld-quiz-sidebar .question-media-img,
+.ld-quiz-sidebar .media-content img {
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    transform: none !important;
+    transition: none !important;
+    object-fit: contain !important;
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+/* Prevent any hover effects on sidebar images */
+.ld-quiz-sidebar img:hover,
+.ld-quiz-sidebar .question-media-img:hover,
+.ld-quiz-sidebar .media-content img:hover {
+    transform: none !important;
+    scale: none !important;
+    zoom: 1 !important;
+    transition: none !important;
+    filter: none !important;
+}
+
+/* Media content container - fixed dimensions */
+.ld-quiz-sidebar .media-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    display: block !important;
+    text-align: center !important;
+}
+
 /* Sidebar - Enhanced positioning with stronger specificity */
 .lilac-quiz-main .quiz-container .ld-quiz-sidebar,
 .site-main .quiz-container .ld-quiz-sidebar,
@@ -152,7 +186,6 @@ main .quiz-container .ld-quiz-sidebar {
     border: 1px solid #e0e0e0 !important;
     position: sticky !important;
     top: 30px !important;
-    max-height: calc(100vh - 60px) !important;
     overflow-y: auto !important;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
     box-sizing: border-box !important;

@@ -258,12 +258,12 @@
 
         // Load media via AJAX
         $.ajax({
-            url: lilac_quiz_sidebar_ajax.ajax_url,
+            url: lilacQuizSidebar.ajaxUrl,
             type: 'POST',
             data: {
                 action: 'get_question_acf_media',
                 question_id: questionId,
-                nonce: lilac_quiz_sidebar_ajax.nonce
+                nonce: lilacQuizSidebar.nonce
             },
             timeout: config.mediaLoadTimeout,
             success: function(response) {
